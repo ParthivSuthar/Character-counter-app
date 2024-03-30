@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Counter App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.0/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>CharWord Tracker</h2>
+      <p>
+        Track characters and words in real time and export as text and pdf easily!
+      </p>
+      <textarea
+        id="textarea"
+        class="textarea"
+        maxlength="150"
+        placeholder="Please write here"
+      ></textarea>
+      <button class="btn">Copy Text</button>
+      <div class="counter-container">
+        <p>Total Characters: <span id="total-counter">0</span></p>
+        <p>Total Words: <span id="total-word">0</span></p>
+        <p>Remaining char: <span id="remaining-char">150</span></p>
+      </div>
+      <div id="export-btns">
+        <button class="plaintxt">Export as Plain Text</button>
+        <button class="pdftxt">Export as Pdf</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

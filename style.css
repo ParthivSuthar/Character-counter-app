@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color: rgb(56, 61, 85);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 30px;
+    margin-top: 80px;
+}
+
+h2{
+    color: rgb(45, 46, 56);
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: -0.2px;
+}
+
+p{
+    max-width: 670px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+
+textarea{
+    width: 100%;
+    height: 316px;
+    padding: 18px;
+    position: relative;
+    resize: none;
+    box-shadow: 0 12px 48px 0px rgb(109 117 141 / 20%);
+    border: 0.5px solid rgb(231, 233, 245);
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+textarea:focus{
+    outline: none;
+    border: 0.3px solid #090900;
+}
+
+p,textarea{
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.6;
+}
+
+button{
+    background-color: rgb(17, 166, 131);
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px 25px;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: auto;
+    display: flex;
+    margin-top: -80px;
+    position: relative;
+    cursor: pointer;
+}
+
+.wordbtn {
+    position: absolute;
+    display: flex;
+    margin-top: -50px;
+    left: 58%;
+}
+
+button:hover, button:focus{
+    background-color: rgb(42, 201, 164);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.counter-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-inline: 15px;
+}
+
+#export-btns {
+    display: flex;
+}
+
+
+@media (max-width: 799px) {
+    button{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .counter-container{
+        justify-content: space-between;
+    }
+
+    .counter-container p{
+        font-size: 15px;
+    }
+
+    .container .btn {
+        margin-top: -50px;
+    }
+}
+
+
+
+
+
+
+
